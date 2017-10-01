@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main(int argc,char *argv[1])
+{
+ int n,q,sum=0;
+ sscanf(argv[1],"%d",&n);
+ while(n!=0)
+ {
+    q=n/10;
+    sum=sum+q;
+    n=n%10;
+ }
+ printf("%d",sum);
+ return 0;
+}
